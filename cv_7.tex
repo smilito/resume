@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Santiago} % Your first name
+\familyname{Milito} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\address{Buenos Aires}{Argentina}
+\mobile{+54-911-6492-7716}
+% \phone{(+54 011) 47845372}
+\email{militosanti@gmail.com}
+% \homepage{http://www.facebook.com/example}{Facebook} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\photo[70pt][0pt]{pictures/cv_picture_mini.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{“Defeat is not the worst of failures.\newline{}Not to have tried is the true failure.”\newline{}\textbf{George Edward Woodberry}}
+%\quote{“I honestly think it is better to be a failure at something you love than to be a success %at something you hate” – George Burns}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%\section{Masters Thesis}
+
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish %and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Development}
+
+\cventry{2017--Present}{Fullstack Engineer}{\textsc{Monsanto}}{}{}{Design, analysis, development and maintenance of Global \textsc{Barter} project which handles the buy \& sell of different grain types using different prices based on quantity and amount of daily operations. Cloud microservices, frontends apps developments under scrum methodology. Using deploy with continous integration.
+\\Development tasks:
+\begin{multicols}{2}
+\begin{itemize}
+\item \emph Analysis and backlog refinement. Vertical slicing.
+\item \emph Cloud microservice development (aws / cloudfoundry, springboot / node).
+\item \emph Angular (angular.io) app developments.
+\item \emph Unit tests.
+\item \emph Integration tests.
+\item \emph Bug solving.
+\item \emph Task and sprint estimation.
+\item \emph Management of Jira issue tracker.
+\end{itemize}
+\end{multicols}}
+
+\makenewline
+
+\cventry{2014--2016}{Backend Engineer}{\textsc{Accedra SA}}{}{}{Web application and Web services design, analysis, development and maintenance at \textsc{MAPFRE (Insurance company)}. Using Axis2, CXF and Spring. Oracle Stored Procedures and Unis shell scripting development. 
+\\Development tasks:
+\begin{multicols}{2}
+\begin{itemize}
+\item \emph Project diagram analysis (DER, UML).
+\item \emph WEB Services (Axis2, CXF, JAX-WS).
+\item \emph Spring MVC Apps.
+\item \emph Stored procedures and functions (Oracle).
+\item \emph Unit tests.
+\item \emph Bug fixing. 
+\item \emph Unix shell scripts (DevOps)
+\item \emph Support over internal projects
+\item \emph Task estimation
+\item \emph Technical log analysis
+\end{itemize}
+\end{multicols}}
+
+\subsection{Testing}
+
+\cventry{2011--2014}{Testing analyst}{\textsc{Connectis-ICT}}{}{}{Design, analysis and execution of functional test cases at \textsc{Movistar (Mobile Network Operator)}.
+Usage and management of HP Quality Center for writing, designing and executing test cases. Test cases designed and executed applied for:
+\newline{}
+\begin{multicols}{2}
+\begin{itemize}
+\item \emph WEB Applications
+\item \emph WEB Services
+\item \emph Databases (Oracle, MySQL)
+\item \emph Unix Shell Scripts
+\item \emph JavaScript
+\end{itemize}
+\end{multicols}}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+% usage: \cventry[spacing]{years}{degree/job title}{institution/employer}{localization}{optionnal: grade/...}{optional: comment/job description}
+\cventry{2012--2017}{Software Engineer (MS)}{Universidad Del CEMA \textsc{(UCEMA)}}{Buenos Aires, Argentina}{}{}
+\cventry{2008-2011}{Software Engineer (MS)}{Instituto Tecnológico De Buenos Aires (ITBA)}{Buenos Aires, Argentina}{}{}  % Arguments not required can be left 
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\cventry{Programming}{Learned and used technologies}{}{}{}{
+\begin{multicols}{2}
+\begin{itemize}
+\item \textsc{Java8}
+\begin{itemize}
+\item Spring Framework
+\item Hibernate Framework
+\item WebServices (SOAP / REST)
+\item Groovy 
+\item Kotlin 
+\item Maven
+\item Swing \& AWT
+\end{itemize}
+\item \textsc{ANSI C}
+\item \textsc{Bash Shell Scripting}
+\item \textsc{WEB Design}
+\begin{itemize}
+\item \textsc{html5}
+\item CSS
+\item Less
+\item Sass
+\item Bootstrap
+\item Materialize CSS
+\end{itemize}
+\item \textsc{JavaScript}
+\begin{itemize}
+\item Express JS
+\item angular.io
+\item TypeScript
+\item jQuery
+\item NPM
+\end{itemize}
+\end{itemize}
+\end{multicols}
+}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interpersonal skills}
+
+\cvitem{-}{Develop professional and emotional relationship with teamwork to achieve goals quickly}
+\cvitem{-}{Engagement with teamwork and client}
+
+%----------------------------------------------------------------------------------------
+%	ANALYTICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Analytical Features}
+\cvitem{Mission}{To meet project goals by understanding the business, researching and developing the best solution through teamwork while managing client expectations.}
+% \cvitem{-}{Easily understand complex business processes.}
+% \cvitem{-}{Design and research over the best possible solution.}
+% \cvitem{-}{Deep analysis and focus over main goal}
+%----------------------------------------------------------------------------------------
+%	OTHER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Otras Características}
+\begin{multicols}{2}
+\cvitem{-}{Passion for \textbf{Development}}
+\cvitem{-}{Perseverance}
+\end{multicols}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Spanish}{Mother tongue}{Native}
+\cvitemwithcomment{English}{Advanced}{Conversationally fluid}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+%
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%
+%\cvlistdoubleitem{Hangout}{Dancing}
+%\cvlistdoubleitem{Football}{Gaming}
+%\cvlistdoubleitem{Tennis}{Table Tennis}
+%\cvlistdoubleitem{Running}{Movies}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
